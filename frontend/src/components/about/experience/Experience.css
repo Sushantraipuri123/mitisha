@@ -1,0 +1,35 @@
+.exp-no-heading{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 992px) {
+    .exp-no-heading {
+        font-size:42px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .exp-no-heading{
+        font-size:38px
+    }
+}
+
+.bg-web-experience-img {
+    background-image: url(./public/bg-svg-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 63%;
+    margin-top: -58px;
+    z-index: -1;
+    width: 220px;
+    height: 140px;
+}
+
+.experiences-text{
+    color: #121820;
+    font-weight: 600;
+    line-height: 140%;  
+}

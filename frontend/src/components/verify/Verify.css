@@ -1,0 +1,12 @@
+.table-row-even {
+    background-color: white;
+}
+
+.table-row-odd {
+    background-color: #f10000; /* Greyish color */
+}
+
+.verify-input{
+    background-color: #59597e29 !important;
+}
+

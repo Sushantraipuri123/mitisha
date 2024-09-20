@@ -1,0 +1,16 @@
+.service-id{
+    font-size: 30px;
+}
+
+.id-container{
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(18,24,32,.05);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+

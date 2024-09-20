@@ -1,0 +1,13 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "mitishasoftech",
+  "url": "https://mitishasoftech.in/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://mitishasoftech.in/{search_term_string}IT Company",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>

@@ -1,0 +1,30 @@
+.testimonial {
+    padding: 20px;
+    height: 150px; /* Adjust as needed for uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.testimonial p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.testimonial h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f57c00;
+    margin-top: auto;
+}
+
+.quote-icon {
+    font-size: 3rem; 
+   
+}

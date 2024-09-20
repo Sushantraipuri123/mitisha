@@ -1,0 +1,86 @@
+.font-22{
+    font-size: 22px;
+}
+
+/* Remove border and focus effect from the form inputs */
+/* Remove border and focus effect from the form inputs */
+.form-control {
+    border: none !important; /* Removes the border */
+    box-shadow: none !important; /* Removes any shadow effect */
+  }
+  
+  .form-control:focus {
+    outline: none !important; /* Removes the default focus outline */
+    border-color: transparent !important; /* Ensures no border color is visible on focus */
+  }
+  
+  .border-bottom{
+    border-bottom: 2px solid rgba(18, 24, 32, .1) !important;
+  }
+
+  .form-control::placeholder {
+    color: rgba(18,24,32,.3)
+  }
+  /* Remove border from textarea */
+textarea.border-none {
+    border: none !important; /* Removes all borders */
+    box-shadow: none !important; /* Removes any shadow effect */
+    outline: none !important; /* Removes default outline */
+  }
+  
+  .icon-container{
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(18,24,32,.05);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.map-container{
+    height: 400px;
+    width:  100%;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    /* Initial styling for smooth scaling */
+    transition: transform 0.9s ease, filter 0.3s ease;
+    /* Ensure scaling within container */
+    transform: scale(1);
+    object-fit: cover; /* Adjust this if necessary */
+    filter: grayscale(100%);
+}
+
+.map-container:hover iframe {
+    filter: grayscale(0%);
+    transform: scale(1.05); /* Zoom effect */
+}
+.contact-logo {
+  background-color: #f57c00; /* Orange background */
+  color: white; /* White icon color */
+  border-radius: 50%; /* Makes the background circular */
+  padding: 0.8rem; /* Adjust size of the circle */
+  display: inline-flex; /* Center icon inside circle */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center icon horizontally */
+  animation: contat 1s linear infinite;
+  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+}
+
+@keyframes contat {
+  0% {
+    box-shadow: 0 0 0 0 #f57b007e;
+  }
+
+  100% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+.nav-tabs {
+    border: none;
+  }
+  
+  .nav-tabs .nav-link {
+    border: none; 
+    box-shadow: none;
+  }
+  
+  .nav-tabs .nav-link.active {
+    border-bottom: none; 
+    box-shadow: none; 
+  }
+/* Custom styles for tab titles */
+.custom-tabs .nav-link {
+    color: rgba(18, 24, 32, 0.534);
+    font-family: "Sora", sans-serif;
+    position: relative; /* Needed for the underline positioning */
+    padding-bottom: 10px; /* Space for the underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Light grey line below tabs */
+  .custom-tabs .nav {
+    border-bottom: 3px solid rgba(18, 24, 32, 0.562); /* Increased width of the light grey line */
+    position: relative; /* Position relative for the pseudo-element */
+    margin-top: 20px; /* Margin from top to add space between tabs and line */
+  }
+  
+  /* Underline styling and animation */
+  .custom-tabs .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -9px; /* Adjusted to align with the bottom of the light grey line */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Height of the underline, increase if needed */
+    background-color: #f57c00;
+    transform: scaleX(0); /* Initially hide the underline */
+    transform-origin: right; /* Animate from right to left */
+    transition: transform 0.3s ease; /* Smooth transition for underline */
+  }
+  
+  .custom-tabs .nav-link.active::after {
+    transform: scaleX(1); /* Show underline when active */
+    transform-origin: left; /* Animation direction for active tab */
+  }
+  

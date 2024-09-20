@@ -1,0 +1,42 @@
+.text-soft {
+    color:hsla(0,0%,100%,.5);
+}
+.bg-footer-saas {
+    background-color: #121820;
+    position: relative; /* Ensure the container is positioned relatively */
+    overflow: hidden;
+  }
+.semicircle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #f57c00;
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 991px) {
+    .semicircle {
+      display: none;
+    }
+  }
+
+
+  .bg-web-saas-img{
+    background-image: url(/bg-svg-orange.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 80%;
+    margin-top: -43px;
+    z-index: 1;
+    width: 220px;
+    height: 140px;
+}
+
+.saas-application-logo {
+    font-size: 21px; 
+  }
+  

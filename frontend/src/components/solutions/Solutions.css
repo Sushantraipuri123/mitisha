@@ -1,0 +1,51 @@
+.solution-img-container{
+    height: 350px;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.solution-img {
+    height: 350px;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.8s ease; 
+}
+
+.solution-img:hover {
+    filter: grayscale(0%);
+}
+
+
+.why-choose-us-img-right {
+    border-radius: 15px;
+    height: 580px !important;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.why-choose-us-img-right > img {
+    border-radius: 15px;
+    filter: grayscale(100);
+    height: 580px !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.why-choose-us-img-right::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #f57c00;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: -150px;
+    right: -150px;
+    animation: puls 1s linear infinite 
+}

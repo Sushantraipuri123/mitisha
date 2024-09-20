@@ -1,0 +1,30 @@
+.bg-topbar{
+    background-color: white;
+    color: black;
+    position: sticky !important;
+    top: 0 !important;
+    box-shadow: 0 0 40px 0 rgba(18, 24, 32, 0.493);
+}
+
+.nav-topbar-text{
+    font-family: 'Sora', sans-serif;
+    color: black !important; 
+    position: relative;
+    text-decoration: none;
+    line-height: 37px;
+    font-size: 14px;
+    transition: color 0.3s ease; 
+}
+
+.nav-topbar-text:hover{
+    color: #f57c00 !important;
+}
+
+.drop-topbar-btn{
+    background: none;
+    border: none;
+    padding: 0;
+    color: black !important;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}

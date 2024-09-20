@@ -1,0 +1,38 @@
+.why-choose-us-img {
+    border-radius: 15px;
+    height: 580px !important;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.why-choose-us-img > img {
+    border-radius: 15px;
+    filter: grayscale(100);
+    height: 580px !important;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.why-choose-us-img::before {
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #f57c00;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: -150px;
+    left: -150px;
+    animation: puls 1s linear infinite 
+}
+
+@keyframes puls {
+    0% {
+        box-shadow: 0 0 0 0 hsla(0, 0%, 100%, 0.541)
+    }
+
+    to {
+        box-shadow: 0 0 0 20px transparent
+    }
+}

@@ -1,0 +1,39 @@
+.parent-about-img{
+    margin-top: 60px;
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.bg-circle-img{
+    width: 100%;
+    height: 100%;
+    background-color: #f57c00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.img-firm-container{
+    width: 100%;
+    height: calc(100% + 60px);
+    position: absolute;
+    top: -60px;
+    left: 0;
+    border-radius: 0 0 47% 47%;
+    overflow: hidden;
+}
+
+.about-img{
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: calc(100% + 60px);
+}
+
+.icon-font{
+    font-size: 22px;
+}

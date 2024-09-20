@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap');
+
+
+.syne{
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .satisfy{
+    font-family: "Satisfy", cursive;
+  }
+
+  .sora{
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .text-orange{
+    color: #f57c00;
+  }
+/* Ensure the container-fluid does not add extra margin or padding */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero section styling */
+.hero-section {
+    height: 100vh; 
+    width: 100%; 
+    position: relative; 
+    overflow: hidden; 
+    padding-top: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background: #000; 
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    overflow: hidden;
+    z-index: 0; 
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes slide {
+    0% { opacity: 1; }
+    25% { opacity: 1; }
+    50% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.slides img:nth-child(1) {
+    animation: slide 9s infinite;
+}
+
+.slides img:nth-child(2) {
+    animation: slide 9s infinite;
+    animation-delay: 3s; 
+}
+
+.slides img:nth-child(3) {
+    animation: slide 9s infinite;
+    animation-delay: 6s; 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    color: white; 
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem; /* Adjust font size for better readability on smaller screens */
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Adjust font size for better readability on smaller screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Slightly smaller font size for smaller screens */
+    }
+}
+
+.hero-img{
+    filter: grayscale(100%);
+}
+
+@media (max-width: 991px) {
+    .medium-display-none {
+        display: none;
+    }
+}
+
+.hero-heading{
+    font-size: 60px !important;
+}
+
+.hero-text{
+    width: 450px;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.btn-mitisha{
+    cursor: pointer;
+    height: 70px;
+    padding: 0 60px;
+    font-family: Sora, sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 0 #f57c00;
+    border: 2px solid #f57c00;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: border 0.3s ease;
+}
+
+.btn-mitisha:hover{
+    border: 3px solid #f57c00;
+}
+
+.hero-min-head{
+    font-size: 18px;
+}
+
+@media (max-width: 425px) {
+    .hero-heading {
+        font-size: 32px !important; 
+    }
+}
+
+@media (max-width: 425px) {
+    .right-col{
+        margin-left: 53px !important;
+        margin-right: 60px !important;
+        max-width: 315px !important;
+    }
+    .btn-mitisha{
+        padding: 0px 36px;
+    }
+}
+
+
+/* -================left col============================ */
+.left-col-item {
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    transition: color 0.3s;
+}
+
+.icon {
+    position: relative; 
+    font-size: 24px; 
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1; 
+    transition: color 0.3s; 
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px; 
+    height: 60px; 
+    background: rgba(0, 0, 0, 0.253); 
+    border-radius: 50%; 
+    transform: translate(-50%, -50%); 
+    transition: background 0.3s; 
+    z-index: -1;
+}
+
+.icon:hover {
+    background-color: #f57c00;
+    animation: puls 0.7s linear infinite 
+}
+
+.left-col-heading {
+    transition: color 0.3s; 
+}
+
+.left-col-item:hover .icon::before {
+    background: #f57c00; 
+}
+
+.left-col-item:hover .left-col-heading {
+    color: #f57c00; 
+}
+
+.second-item{
+    margin-top: 15%;
+    margin-left: 52%;
+}
+
+/* Example CSS for the popover arrow */
+.popover {
+    max-width: 200px; /* Adjust as needed */
+}
+
+.popover .arrow::before {
+    border-top-color: transparent; /* Adjust arrow color */
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.popover-body {
+    background-color: #fff; /* Adjust background color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Optional: rounded corners */
+    padding: 1rem; /* Optional: padding */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow */
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.small-hr-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.small-hr {
+    width: 20px; 
+    height: 3px; 
+    background-color: #f57c00;
+    border: 2px;
+    margin-right: 10px; 
+    opacity:20;
+}
+
+.full-hr {
+    flex-grow: 1;
+    height: 3px; 
+    background-color: lightgray;
+    border: 2px;
+    margin: 0;
+}
+
+.popover-text{
+    font-size: 13px;
+    font-family: "Syne", sans-serif;
+}
+
+.popover-heading{
+    font-size: 18px;
+    font-family: "Sora", sans-serif;
+}
+
+
+
+/* ===========abinamtion for background============ */
+
+
+
+
+@keyframes puls {
+    0% {
+        box-shadow: 0 0 0 0 hsla(0,0%,100%,.3)
+    }
+
+    to {
+        box-shadow: 0 0 0 20px transparent
+    }
+}
